@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, main h2 {
+  font-family: 'Abel', sans-serif; }
+
+/* header
+------------------------------------------------------------*/
+#neko {
+  background-image: url("./images/header_neko.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+/* main
+------------------------------------------------------------*/
+.container {
+  width: 90%; }
+
+main {
+  background-color: #fdfcf6;
+  padding: 30px 0; }
+  main .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  main h2 {
+    padding-bottom: 30px;
+    font-size: 2.5rem; }
+  main .main-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    background-color: #bea300;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    color: white; }
+    main .main-box h3 {
+      padding: 20px;
+      background-color: #14c0c9; }
+    main .main-box p {
+      padding: 50px;
+      text-align: center; }
+
+/* footer
+------------------------------------------------------------*/
+footer {
+  font-size: 1.5rem;
+  padding: 50px;
+  background-color: #e6e6fa; }
+  footer h4 {
+    padding-bottom: 5px; }
+  footer p {
+    color: white;
+    background-color: #bea300;
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px; }
+
+@media (min-width: 769px) {
+  main .container {
+    flex-direction: row;
+    /*横*/ }
+  main .main-box {
+    margin: 0 20px; }
+
+  #neko {
+    height: 500px; } }
+
+/*# sourceMappingURL=style.css.map */
